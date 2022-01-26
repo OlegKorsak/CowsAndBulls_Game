@@ -44,6 +44,21 @@ void checking(int *pn) {
 
 int main()
 {
+
+
+    cout << "=============================================" << endl;
+    cout << "Welcome to Bulls&Cows Game" << endl;
+    cout << "Here,computer generates 4-digit number." << endl;
+    cout << "Your task is to guess it, using hint like Cows or Bulls." << endl;
+    cout << "Cows means that in your number present digit from original number,but not in right place." << endl;
+    cout << "Bulls means that in your number present digit from original number and it is on right place." << endl;
+    cout << "For example,if original number is 3841,so in your number 9815 will be 1 cow and 1 bull," << endl;
+    cout << "but in 3814 will be 2 bull and 2 cows." << endl;
+    cout << "Number can't start with 0 or have repeating digits" << endl;
+    cout << "Enjoy!" << endl;
+    cout << "=============================================" << endl;
+
+
     srand(time(NULL));
 
     int a = 0;

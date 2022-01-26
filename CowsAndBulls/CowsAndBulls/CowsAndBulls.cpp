@@ -3,6 +3,7 @@
 #include <sstream>
 #include <time.h>
 #include "Checker_File.h"
+#include <Windows.h>
 
 using namespace std;
 
@@ -26,6 +27,9 @@ void checking(int *pn) {
         BullsAndCowsCounter(guess, number);
         if (guess == number) {
             cout << "You guessed a number!" << endl;
+
+            cout << "Game will close in 5 seconds." << endl;
+            Sleep(5000);
         }
         else {
             cout << "Guess again:" << endl;
